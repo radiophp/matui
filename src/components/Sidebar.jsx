@@ -4,12 +4,10 @@ import {HomeRounded} from "@mui/icons-material"
 const Sidebar = ({value,handleChange}) => {
 
     const tabProps = (index)=>{
-        let ret = {
+        return {
             id :`sidebar-tab-${index}` ,
             "aria-controls": `tabpanle-${index}`
         };
-        console.log(ret);
-        return ret;
     };
 
     return (
@@ -23,16 +21,18 @@ const Sidebar = ({value,handleChange}) => {
                     allowScrollButtonsMobile
                     value={parseInt(value)}
                     onChange={handleChange}
-                    TabIndicatorProps={{
-                        style: {
-                            color: ""
-                        }
-                    }}
+                    textColor="secondary"
+                    indicatorColor="secondary"
                 >
-                    <Tab label={"صفحه اصلی"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(1)}></Tab>
-                    <Tab label={"صفحه دوم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(2)}></Tab>
+                    <Tab label={"صفحه اصلی"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(0)}></Tab>
+                    <Tab label={"صفحه دوم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(1)}></Tab>
                     <Tab label={"صفحه سوم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(2)}></Tab>
+                    <Tab label={"صفحه چهارم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(3)}></Tab>
+                    <Tab label={"صفحه پنجم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(4)}></Tab>
+                    <Tab label={"صفحه ششم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(5)}></Tab>
+                    <Tab label={"صفحه ششم"} icon={<HomeRounded />} iconPosition={"start"} {...tabProps(6)}></Tab>
                 </Tabs>
+         
             </Grid>
         </>
 

@@ -24,12 +24,12 @@ const MainLayout = ({children})=>{
                     </Helmet>
                     <Header></Header>
                     {/*Grid system*/}
-                    <Container maxWidth="lg" sx={ {height: "100vh"} }>
+                     
                     <Grid container  sx={{height:"100vh"}}>
 
                         {children}
                     </Grid>
-                     </Container>
+                      
 
 
 

@@ -4,7 +4,7 @@ export const theme = createTheme({
     direction: "rtl",
     palette : {
       mode : "dark",
-      primary : { main : "#00695C"},
+      primary : { main : "#000"},
       secondary : {main : "#388E3C"}
     },
     typography :{ fontFamily: "vazir , roboto"},
