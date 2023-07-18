@@ -15,9 +15,14 @@ function App() {
   }
 
   return (
-    <MainLayout>
+    <MainLayout> 
+     
+    
+    
+    
+    
 
-
+ 
             <Sidebar value={value} handleChange={handleChange} />
             <ContentContainer ></ContentContainer>
 
